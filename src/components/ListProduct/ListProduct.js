@@ -1,13 +1,13 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import './ListProduct.scss'
-const ListProduct = () => {
-    const {product} = useSelector((state) => state.data)
+const ListProduct = ({ products }) => {
+   
 
   return (
     <div className='product'>
         {
-            product.map((item,index) => 
+            products.map((item,index) => 
             <div key={index} className='product-card'>
                <div> <img src={item.url}/></div>
                <div className='product-text'>

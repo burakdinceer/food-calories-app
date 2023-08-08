@@ -18,13 +18,19 @@ const initialState = {
             {id:1,name:'100Gr',calori:375},
             {id:2,name:'1 Paket',calori:1875}
         ]},
-    ]
+    ],
+    filterData: []
 }
 
 export const dataSlice = createSlice({
     name:'data',
     initialState,
-    reducers:{}
+    reducers:{
+        filterInput:(state,action) => {
+            state.filterData = action.payload
+        }
+    }
 })
 
+export const {filterInput} = dataSlice.actions
 export default dataSlice.reducer
