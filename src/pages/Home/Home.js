@@ -1,9 +1,18 @@
-import React from 'react'
-
+import React from "react";
+import ListProduct from "../../components/ListProduct/ListProduct";
+import "./Home.scss";
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="home-page">
+      <div className="home-header">
+        <img src="kalori-logo.webp" />
+        <input placeholder="Ürün Ara...." />
+      </div>
 
-export default Home
+        <ListProduct/>
+
+    </div>
+  );
+};
+
+export default Home;

@@ -1,0 +1,21 @@
+.home-page {
+    .home-header {
+        background-color:#F7F8F3;
+        text-align: center;
+        display: flex;
+         align-items: center;
+        justify-content: space-around;
+        img{
+            width: 100px;
+            height: auto;
+           
+        }
+       input {
+        width: 450px;
+        height: 35px;
+        border-radius: 10px;
+        border: 2px solid #749934;
+        
+       }
+    }
+}
