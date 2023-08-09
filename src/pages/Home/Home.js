@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import AddProduct from "../../components/AddProduct/AddProduct";
 import ListProduct from "../../components/ListProduct/ListProduct";
 import SortProduct from "../../components/SortProduct/SortProduct";
 import { filterInput } from "../../redux/dataSlice";
@@ -17,7 +18,8 @@ const Home = () => {
       <div className="home-header">
         <img alt="LOGO" src="kalori-logo.webp" />
         <input onChange={(e)=>handleChange(e.target.value)} type='text' placeholder="Ürün Ara...." />
-      </div>
+      </div>  
+        <AddProduct/>
         <SortProduct/>
         <ListProduct products={filterData.length > 0 ? filterData : product} />
 
