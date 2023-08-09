@@ -1,0 +1,19 @@
+.sort-product {
+    margin-top: 20px;
+    text-align: center;
+    button {
+        margin-left: 80px;
+        margin-right: 80px;
+        background-color: #749934;
+        color: white;
+        width: 20%;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 19px;
+        font-weight: bold;
+        &:hover {
+            background-color: white;
+            color:#749934;
+        }
+    }
+}

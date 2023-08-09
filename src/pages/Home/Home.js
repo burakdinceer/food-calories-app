@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ListProduct from "../../components/ListProduct/ListProduct";
+import SortProduct from "../../components/SortProduct/SortProduct";
 import { filterInput } from "../../redux/dataSlice";
 import "./Home.scss";
 const Home = () => {
@@ -14,10 +15,10 @@ const Home = () => {
   return (
     <div className="home-page">
       <div className="home-header">
-        <img src="kalori-logo.webp" />
+        <img alt="LOGO" src="kalori-logo.webp" />
         <input onChange={(e)=>handleChange(e.target.value)} type='text' placeholder="Ürün Ara...." />
       </div>
-
+        <SortProduct/>
         <ListProduct products={filterData.length > 0 ? filterData : product} />
 
     </div>
