@@ -10,10 +10,10 @@ const AddProduct = () => {
 
   return (
     <div className='add-product'>
-        <button onClick={handlePage}>Yeni Ürün Ekle</button>
+        <button className='add-btn' onClick={handlePage}>Yeni Ürün Ekle</button>
     {
         isActive ?
-        <Modal/>
+        <Modal active={isActive} />
         :
         null
     }

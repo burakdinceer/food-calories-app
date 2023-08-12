@@ -63,9 +63,13 @@ export const dataSlice = createSlice({
         },
         listSortProduct:(state,action) => {
             state.product = action.payload
+        },
+        addProduct:(state,action) => {
+           
+            state.product = [...state.product,action.payload]
         }
     }
 })
 
-export const {filterInput,listSortProduct} = dataSlice.actions
+export const {filterInput,listSortProduct,addProduct} = dataSlice.actions
 export default dataSlice.reducer
