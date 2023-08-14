@@ -37,6 +37,7 @@ const ListProduct = ({ listProduct }) => {
                            
                         </div>
                         <button onClick={()=>handleNavigatePage(item.id)} className='details-btn'>Detaylı İncele</button>
+                        <button className='add-product-calori'>+</button>
                        </>
                        
                     ))

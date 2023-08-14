@@ -35,6 +35,21 @@
 
       .product-text {
         margin-top: 10px;
+        position: relative;
+        .add-product-calori{
+          position: absolute;
+          width: 35px;
+          height: 35px;
+          right: 0;
+          bottom: -2px;
+          border-radius: 20px;
+          background-color:  #749934;
+          color: white;
+          font-size: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
         .details-btn {
           background-color: #749934;
           color: white;
@@ -44,6 +59,7 @@
             background-color: white;
             color: #749934;
           }
+         
         }
         h3 {
             font-size: 24px;

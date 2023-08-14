@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import AddProduct from "../../components/AddProduct/AddProduct";
 import ListProduct from "../../components/ListProduct/ListProduct";
 import SortProduct from "../../components/SortProduct/SortProduct";
+import TotalCalori from "../../components/TotalCalori/TotalCalori";
 import { filterInput } from "../../redux/dataSlice";
 import "./Home.scss";
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
       </div>  
         <AddProduct/>
         <SortProduct/>
+        <TotalCalori/>
         <ListProduct listProduct={filterData.length > 0 ? filterData : product} />
 
     </div>

@@ -8,7 +8,7 @@ const SortProduct = () => {
     const dispatch = useDispatch()
 
     const handleCaloriesSort = () => {
-        const sortedCalori = [...product] .sort((a, b) => {
+        const sortedCalori = [...product].sort((a, b) => {
         
                 const caloriA = a.calories[0].calori; 
                 const caloriB = b.calories[0].calori;
