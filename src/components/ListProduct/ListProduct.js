@@ -1,16 +1,22 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import { deleteProduct } from '../../redux/dataSlice'
 import './ListProduct.scss'
 const ListProduct = ({ listProduct }) => {
 
   const {product} = useSelector((state) => state.data)
   const dispatch = useDispatch()
+  const navigate = useNavigate()
   const handleDelete = (id) => {
-    const newArr = product.filter(item => (
+     product.filter(item => (
       item.id === id ? dispatch(deleteProduct(id)) : item
     ))
    
+  }
+
+  const handleNavigatePage = (id) => {
+    navigate(`/${id}`)
   }
 
   return (
@@ -30,7 +36,7 @@ const ListProduct = ({ listProduct }) => {
                              <div>{filterCalori.calori}cl</div> 
                            
                         </div>
-                        <button className='details-btn'>Detaylı İncele</button>
+                        <button onClick={()=>handleNavigatePage(item.id)} className='details-btn'>Detaylı İncele</button>
                        </>
                        
                     ))
