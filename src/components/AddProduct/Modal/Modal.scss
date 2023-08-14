@@ -5,7 +5,78 @@
     position: absolute;
     left: 25%;
     top: 30%;
-    
+    z-index: 9999;
+    .modal-main {
+      .modal-product{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        input {
+            border-radius: 10px;
+            width: 30%;
+        }
+        p{
+            width: 30%;
+            height: 30px;
+            border: 1px solid #749934;
+            color: black;
+            font-size: 20px;
+            
+        }
+      }
+      .modal-calori-one {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        input {
+            border-radius: 10px;
+            width: 30%;
+        }
+        p{
+            width: 30%;
+            height: 30px;
+            border: 1px solid #749934;
+            color: black;
+            font-size: 20px;
+            
+        }
+      }
+      .modal-calori-two {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        input {
+            border-radius: 10px;
+            width: 30%;
+        }
+        p{
+            width: 30%;
+            height: 30px;
+            border: 1px solid #749934;
+            color: black;
+            font-size: 20px;
+            
+        }
+      }
+      button {
+        width: 50%;
+        margin-top: 30px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #749934;
+        color: white;
+        &:hover{
+            background-color: white;
+            color:  #749934;
+        }
+      }
+    }
 
    
 }

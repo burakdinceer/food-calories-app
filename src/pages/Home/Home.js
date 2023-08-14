@@ -21,7 +21,7 @@ const Home = () => {
       </div>  
         <AddProduct/>
         <SortProduct/>
-        <ListProduct products={filterData.length > 0 ? filterData : product} />
+        <ListProduct listProduct={filterData.length > 0 ? filterData : product} />
 
     </div>
   );

@@ -13,7 +13,7 @@ const AddProduct = () => {
         <button className='add-btn' onClick={handlePage}>Yeni Ürün Ekle</button>
     {
         isActive ?
-        <Modal active={isActive} />
+        <Modal modalClose={handlePage} active={isActive} />
         :
         null
     }
